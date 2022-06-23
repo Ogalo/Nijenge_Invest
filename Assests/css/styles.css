@@ -99,7 +99,11 @@
   margin: 20px;
   border-color: white;
   color: white;
-  
+  cursor: pointer;
+}
+
+.businessName .target h4:hover{
+  color: rgba(16, 88, 221, 0.959);
 }
 
 .navMenus{
