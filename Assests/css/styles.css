@@ -157,14 +157,21 @@ a {
   text-align: center;
 }
 
+.investors{
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top:80px;
+  justify-content: center;
+  align-content: center;
+}
+
 .investors h1 {
   font-size: 30px;
   font-weight: bold;
-  padding: 15px;
 }
 
-.label {
-  display: inline-block;
+.investors input {
+  width: 100%;
   
 }
 
@@ -176,6 +183,7 @@ a {
   border-radius: 5px 5px 0 0;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -185,15 +193,22 @@ a {
   color: #ffff;
   text-align: left;
   font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+
 }
 
 .content-table tbody tr:hover {
   font-weight: bold;
   color: #009879;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+
 }
 
 .content-table th, .content-table td {
   padding: 12px 15px;
+  font-family: 'Times New Roman', Times, serif;
+
 }
 
 .content-table tbody tr {
