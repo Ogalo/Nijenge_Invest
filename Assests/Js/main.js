@@ -1,13 +1,3 @@
-const signInOut = document.getElementById("butt1");
-const pageLoad = document.getElementsByClassName("page");
-
-document.addEventListener("DOMContentLoaded", (e) => {
-  e.preventDefault();
-});
-
-signInOut.onclick = function (){
-  
-  if(signInOut){
-  pageLoad.style.display = "block";
-  };
-}
+const links = document.querySelectorAll("button", "h4", "h3")
+const pages = document.querySelectorAll(".page")
+const butt = document.querySelectorAll("button")

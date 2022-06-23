@@ -32,6 +32,11 @@
 
 }
 
+.navLinks .sign button:hover {
+  cursor: pointer;
+  color: rgba(16, 88, 221, 0.959);
+}
+
 
 .mediaLinks a{
   font-family: Arial, Helvetica, sans-serif;
@@ -48,10 +53,9 @@
 }
 
 .page{
-  width: 60vw;
+  width: 100%;
   position: absolute;
-  transform: translateX(-50%);
-  display: none;
+  
 }
 
 
@@ -121,6 +125,11 @@
   padding: 20px 70px 5px ;
 
 
+}
+
+.navMenus h3:hover {
+  cursor: pointer;
+  color: rgba(16, 88, 221, 0.959);
 }
 
 @media screen and (max-width: 560px) {
