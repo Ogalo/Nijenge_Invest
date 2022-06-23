@@ -47,6 +47,22 @@
   color: rgba(16, 88, 221, 0.959);
 }
 
+.page{
+  width: 60vw;
+  position: absolute;
+  transform: translateX(-50%);
+  display: none;
+}
+
+
+
+.entrepreneur{
+  padding-top: 30px;
+  padding-left: 150px;
+  padding-right: 150px;
+
+}
+
 .businessName{
   display:block;
   justify-items: center;
@@ -81,6 +97,7 @@
   text-align: center;
   margin: 20px;
   border-color: white;
+  color: white;
   
 }
 
@@ -102,6 +119,12 @@
 
 @media screen and (max-width: 560px) {
   
+}
+
+.form, .logIn{
+  padding-top: 30px;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 
 /* Add padding to containers */
@@ -170,9 +193,8 @@ a {
   font-weight: bold;
 }
 
-.investors input {
-  width: 100%;
-  
+.optionSelect{
+  padding-top: 20px;
 }
 
 .content-table {

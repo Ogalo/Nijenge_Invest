@@ -1,9 +1,13 @@
-let mylist = ["Real state", "Automotive", "Agriculture", "Education", "Logistics"]
+const signInOut = document.getElementById("butt1");
+const pageLoad = document.getElementsByClassName("page");
 
+document.addEventListener("DOMContentLoaded", (e) => {
+  e.preventDefault();
+});
 
-
-
-function proposalCategory (){
-  document.getElementById("optionSelect").value = mylist.option[mylist.selectedIndex].text;
-
+signInOut.onclick = function (){
+  
+  if(signInOut){
+  pageLoad.style.display = "block";
+  };
 }
