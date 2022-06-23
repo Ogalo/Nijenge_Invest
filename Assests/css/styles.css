@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.main{
+  width: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(../images/eberhard-grossgasteiger-rNWB3AaqxYs-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.navLinks{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 62px;
+  margin-left: 62px;
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+.navLinks .sign button {
+  font-size: 18px;
+  border-radius: 5px;
+  border: 0.5px solid #fff;
+  padding: 3px;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+.mediaLinks a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: Bold;
+  padding-left: 20px;
+  height: 40px;
+  font-size: 30px;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.mediaLinks ion-icon:hover{
+  color: rgba(16, 88, 221, 0.959);
+}
+
+.businessName{
+  display:block;
+  justify-items: center;
+  align-content: center;
+  margin: auto;
+  position: relative;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top:80px;
+  
+}
+
+.businessName h1{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.businessName .target{
+  padding-top: 10px;
+  padding-left: -70px;
+  justify-items: center;
+  
+}
+
+.businessName .target h4 {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  line-height: 50px;
+  text-align: center;
+  margin: 20px;
+  border-color: white;
+  
+}
+
+.navMenus{
+  display: flex;
+  padding:35px 150px 35px 150px;
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.navMenus h3 {
+  display: inline-block;
+  padding: 20px 70px 5px ;
+
+
+}
+
+@media screen and (max-width: 560px) {
+  
+}
+
+/* Add padding to containers */
+.container {
+  padding: 20px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
