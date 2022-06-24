@@ -4,14 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js" crossorigin="anonymous" module=""></script>
   <link rel="stylesheet" href="./Assests/css/styles.css">
   <title>Nijenge</title>
 </head>
 <body>
-  <section class="page">
+  <section class="mainPage">
     <div class="main">
       <!--Social media links and sign up button-->
     
@@ -21,9 +19,10 @@
             <a href="https://www.instagram.com/invites/contact/?i=1l91nn9umfi3w&utm_content=m3fdriq"><ion-icon name="logo-Instagram"></ion-icon></a>
             <a href="https://twitter.com/ogalo_harrison?t=3wZK0x7AKO9b3pwfF7Dmyg&s=09"><ion-icon name="logo-twitter"></ion-icon></a>
             <a href="https://www.facebook.com/profile.php?id=100069268413454"><ion-icon name="logo-facebook"></ion-icon></a>
+           
           </div>
           <div class="sign">
-            <button id="butt1">Sign Up</button>
+            <button id="butt1" class="link">Sign Up</button>
           </div>
        </div>
      
@@ -31,8 +30,8 @@
        <div class="businessName">
           <h1>Nijenge</h1>
           <div class="target">
-           <h4>Entrepreneur</h4>
-           <h4>Investor</h4>
+           <h4 class="link">Entrepreneur</h4>
+           <h4 class="link">Investor</h4>
            <h4>Consultants</h4>
            <h4>Check Ups</h4>
           </div>
@@ -56,6 +55,9 @@
   
   <!--Pages of the web-->
   <section id="signUp" class="page">
+    <span class = "close-btn">
+      <i class = "fas fa-times"></i>
+    </span>
     <div class="form">
       <form action="#">
         <div class="container">
@@ -87,7 +89,10 @@
    
   </section>
 
-  <section class="page">
+  <section class="logInPage">
+    <span class = "close-btn">
+      <i class = "fas fa-times"></i>
+    </span>
     <div class="logIn">
       <form action="">
         <div class="container2">
@@ -95,10 +100,10 @@
           <hr>
       
           <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" id="email" required>
+          <input type="text" placeholder="Enter Email" name="email" id="email2" required>
       
           <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+          <input type="password" placeholder="Enter Password" name="psw" id="psw2" required>
       
           <hr>
       
@@ -113,7 +118,10 @@
 
   </section>
 
-  <section class="page">
+  <section class="entrePage">
+    <span class = "close-btn">
+      <i class = "fas fa-times"></i>
+    </span>
     <form action="" class="entrepreneur">
       <div class="proposal">
         <h1>Entrepreneur Proposal</h1>
@@ -123,22 +131,22 @@
         <input type="text" placeholder="Enter business name" name="business" id="busina" required>
     
         <label for="probState"><b>Problem Statement</b></label>
-        <input type="text" placeholder="Enter problem statement" name="business" id="busina" required>
+        <input type="text" placeholder="Enter problem statement" name="business" id="busina2" required>
 
         <label for="solSummary"><b> Solution Summary</b></label>
-        <input type="text" placeholder="Enter solution" name="business" id="busina" required>
+        <input type="text" placeholder="Enter solution" name="business" id="busina3" required>
 
         <label for="targetMarket"><b>Market</b></label>
-        <input type="text" placeholder="What is your target market ?" name="business" id="busina" required>
+        <input type="text" placeholder="What is your target market ?" name="business" id="busina4" required>
 
         <label for="competitors"><b>Competitors</b></label>
-        <input type="text" placeholder="Who are your competitors ?" name="business" id="busina" required>
+        <input type="text" placeholder="Who are your competitors ?" name="business" id="busina5" required>
 
         <label for="whyUs"><b> Why Us</b></label>
-        <input type="text" placeholder="Why should I choose you ?" name="business" id="busina" required>
+        <input type="text" placeholder="Why should I choose you ?" name="business" id="busina6" required>
 
         <label for="Forecast"><b>Returns and Expectations</b></label>
-        <input type="text" placeholder="financial targets " name="business" id="busina" required>
+        <input type="text" placeholder="financial targets " name="business" id="busina7" required>
 
     
         <hr>
@@ -149,7 +157,10 @@
     </form>
   </section>
 
-  <section class="page">
+  <section class="investPage">
+    <span class = "close-btn">
+      <i class = "fas fa-times"></i>
+    </span>
     <div class="investors">
       <h1>Investors</h1>
                  
@@ -207,7 +218,7 @@
   </section>
 
 
-  <script  src="./Assests/Js/main.js"></script>
+  <script type="module"  src="./Assests/Js/main.js"></script>
   
 </body>
 </html>
