@@ -1,20 +1,20 @@
-const buttSign = document.querySelectorAll("button")
-const signUpPage = document.querySelectorAll(".page")
+// const buttSign = document.querySelectorAll("button")
+// const signUpPage = document.querySelectorAll(".page")
 
 
-function loadSignUp (e){
-  e.preventDefault();
+// function loadSignUp (e){
+//   e.preventDefault();
   
-  if (buttSign.click == true) {
-      signUpPage.style.display = "block"
-  } else {
-      signUpPage.style.display = "none"
-  }
+//   if (buttSign.click == true) {
+//       signUpPage.style.display = "block"
+//   } else {
+//       signUpPage.style.display = "none"
+//   }
   
   
-}
+// }
 
-buttSign.addEventListener("click", loadSignUp);
+// buttSign.addEventListener("click", loadSignUp);
 
 
 // let selectedPageBtn = "";
@@ -31,26 +31,48 @@ buttSign.addEventListener("click", loadSignUp);
 //   })
 // }
 
-const links = document.querySelectorAll('');
+const links = document.querySelectorAll('#butt1');
 const pages = document.querySelectorAll('.page');
 const allBtns = document.querySelectorAll('.close-btn');
+console.log(links)
 
-let selectedPageBtn = "";
-for(let i = 0; i < links.length; i++){
-    links[i].addEventListener('click', function(event){
-        event.preventDefault();
-        for(let i = 0; i < pages.length; i++){
-            pages[i].style.display = "none";
-        }
-        pages[i].style.display = "block";
-        selectedPageBtn = i;
-        document.querySelector('header').style.filter = "blur(2px)";
-    });
+function loadSignUp (e){
+  e.preventDefault();
+}
+  
+function regiForm (){
+  if (links.click == true) {
+    pages.style.display = "block"
+  } 
+  else {
+    pages.style.display = "none"
 }
 
-for(let i = 0; i < allBtns.length; i++){
-    allBtns[i].addEventListener('click', function(){
-        allBtns[i].parentElement.style.display = "none";
-        document.querySelector('header').style.filter = "blur(0px)";
-    });
 }
+
+links.addEventListener("click", e =>{
+  console.log(e.target)
+})
+
+
+  
+
+// links.addEventListener('click', function(event){
+//         event.preventDefault();
+//         console.log()
+        
+//        if(pages.style.display == "none"){
+//         pages.style.display = "block";
+//        }
+//        else{
+//         pages.style.display = "none";
+//        }
+        
+        
+//     });
+    
+
+// allBtns.addEventListener('click', function(){
+//         return allBtns.parentElement.style.display = "none";
+        
+//     });

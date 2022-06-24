@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 .main{
@@ -37,7 +36,7 @@
   color: rgba(16, 88, 221, 0.959);
 }
 
-/* Style all font awesome icons */
+
 .fa {
   text-align: center;
   text-decoration: none;
@@ -56,7 +55,7 @@
   color: rgba(16, 88, 221, 0.959);
 }
 
-/* Set a specific color for each brand */
+
 
 .fa-twitter , fa-instagram, fa-linkedin, fa-facebook{
   color: white;
@@ -77,12 +76,35 @@
   color: rgba(16, 88, 221, 0.959);
 }
 
-.page, .investPage, .entrePage, .logInPage{
+.logInPage{
   width: 100%;
-  position: absolute;
-  display: none;
+  display: block;
+  height: 100vh;
   
 }
+
+.entrePage{
+  width: 100%;
+  display: block;
+  height: 120vh;
+}
+ 
+.investPage{
+  width: 100%;
+  display: block;
+  height: 100vh;
+}
+
+.page{
+  width: 100%;
+  display: block;
+  height: 100vh;
+}
+
+
+
+
+
 
 span{
   display: block;
@@ -165,7 +187,7 @@ span i{
   color: rgba(16, 88, 221, 0.959);
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (min-width: 400px) {
   
 }
 
@@ -217,12 +239,12 @@ hr {
   opacity:1;
 }
 
-/* Add a blue text color to links */
+
 a {
   color: dodgerblue;
 }
 
-/* Set a grey background color and center the text of the "sign in" section */
+
 .signin {
   background-color: #f1f1f1;
   text-align: center;
