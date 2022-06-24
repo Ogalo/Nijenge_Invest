@@ -6,7 +6,9 @@ const toggleSignIn = document.getElementById("signIn")
 const signInPage = document.getElementById("logInPage")
 const closeTab = document.querySelector(".closeBtn")
 const closeTab1 = document.querySelector(".closeBtn1")
-
+const closeTab2 = document.querySelector(".closeBtn2")
+const EntreButt = document.getElementById("entreBtn")
+const entrePage = document.getElementById("entrePage")
 
 toggleSignUp.addEventListener("click", (e) =>{
   e.preventDefault();
@@ -22,8 +24,8 @@ toggleSignUp.addEventListener("click", (e) =>{
   }
 })
 
-toggleSignUp2.addEventListener("click", (e) =>{
-  e.preventDefault();
+toggleSignUp2.addEventListener("click", () =>{
+  
   if(signUpPage.style.display === "none"){
     signInPage.style.display = "none";
     signUpPage.style.display = "block";
@@ -48,8 +50,8 @@ closeTab.addEventListener ("click", () => {
   
 })
 
-toggleSignIn.addEventListener("click", (e) =>{
-  e.preventDefault();
+toggleSignIn.addEventListener("click", () =>{
+  ;
   if(signInPage.style.display === "none"){
     
     signInPage.style.display = "block";
@@ -71,5 +73,31 @@ closeTab1.addEventListener ("click", () => {
     closeTab1.parentElement.style.display = "none";
     mainPage.style.display = "none";
   }
+  
+})
+
+EntreButt.addEventListener("click", () =>{
+  
+  if(entrePage.style.display === "none"){
+    
+    entrePage.style.display = "block";
+    
+  }else{
+    
+    entrePage.style.display = "none";
+    
+
+  }
+})
+
+closeTab2.addEventListener ("click", () => {
+  if(closeTab.parentElement.style.display === "none"){
+    closeTab2.parentElement.style.display = "block";
+    entrePage.style.display = "none";
+  }else{
+    closeTab2.parentElement.style.display = "none";
+    mainPage.style.display = "none"
+  }
+  
   
 })
