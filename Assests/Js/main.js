@@ -28,15 +28,6 @@ toggleSignUp.addEventListener("click", (e) =>{
   }
 })
 
-const ValidatorPizzaClient = require("validator-pizza-node");
-
-const client = new ValidatorPizzaClient();
-client.validate("domain", "yopmail.com")
-  .then(response => {
-    console.log(response.valid());
-    console.log(response.field("mx")); // Available fields: status, email, domain, mx, disposable, alias, did_you_mean, remaining_requests
-    console.log(response.successful());
-  });
 
 
 toggleSignUp2.addEventListener("click", () =>{
@@ -143,3 +134,12 @@ closeTab3.addEventListener ("click", () => {
   
 })
 
+const ValidatorPizzaClient = require("validator-pizza-node");
+
+const client = new ValidatorPizzaClient();
+client.validate("domain", "yopmail.com")
+  .then(response => {
+    console.log(response.valid());
+    console.log(response.field("mx")); // Available fields: status, email, domain, mx, disposable, alias, did_you_mean, remaining_requests
+    console.log(response.successful());
+  });
