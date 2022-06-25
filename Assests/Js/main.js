@@ -134,12 +134,12 @@ closeTab3.addEventListener ("click", () => {
   
 })
 
-const ValidatorPizzaClient = require("validator-pizza-node");
+// const ValidatorPizzaClient = require("validator-pizza-node");
 
-const client = new ValidatorPizzaClient();
-client.validate("domain", "yopmail.com")
-  .then(response => {
-    console.log(response.valid());
-    console.log(response.field("mx")); // Available fields: status, email, domain, mx, disposable, alias, did_you_mean, remaining_requests
-    console.log(response.successful());
-  });
+// const client = new ValidatorPizzaClient();
+// client.validate("domain", "yopmail.com")
+//   .then(response => {
+//     console.log(response.valid());
+//     console.log(response.field("mx")); // Available fields: status, email, domain, mx, disposable, alias, did_you_mean, remaining_requests
+//     console.log(response.successful());
+//   });
