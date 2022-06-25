@@ -7,8 +7,11 @@ const signInPage = document.getElementById("logInPage")
 const closeTab = document.querySelector(".closeBtn")
 const closeTab1 = document.querySelector(".closeBtn1")
 const closeTab2 = document.querySelector(".closeBtn2")
+const closeTab3 = document.querySelector(".closeBtn3")
 const EntreButt = document.getElementById("entreBtn")
 const entrePage = document.getElementById("entrePage")
+const investBtn = document.getElementById("investBtn")
+const investPage = document.getElementById("investPage")
 
 toggleSignUp.addEventListener("click", (e) =>{
   e.preventDefault();
@@ -91,11 +94,37 @@ EntreButt.addEventListener("click", () =>{
 })
 
 closeTab2.addEventListener ("click", () => {
-  if(closeTab.parentElement.style.display === "none"){
+  if(closeTab2.parentElement.style.display === "none"){
     closeTab2.parentElement.style.display = "block";
     entrePage.style.display = "none";
   }else{
     closeTab2.parentElement.style.display = "none";
+    mainPage.style.display = "none"
+  }
+  
+  
+})
+
+investBtn.addEventListener("click", () =>{
+  
+  if(investPage.style.display === "none"){
+    
+    investPage.style.display = "block";
+    
+  }else{
+    
+    investPage.style.display = "none";
+    
+
+  }
+})
+
+closeTab3.addEventListener ("click", () => {
+  if(closeTab3.parentElement.style.display === "none"){
+    closeTab3.parentElement.style.display = "block";
+    investPage.style.display = "none";
+  }else{
+    closeTab3.parentElement.style.display = "none";
     mainPage.style.display = "none"
   }
   
