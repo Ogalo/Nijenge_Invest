@@ -2,7 +2,7 @@
 #### Nijenge is a web platform that brings both Entrepreneurs and Investors to bring a vision into reality.
 #### By Harrison Omondi Otieno, a student at Moringa School
 ## Description
-This is a web page that is the same as the one given for reference. It is fully coded in HTML, CSS and JavaScript. It is user-friendly and functional.
+This is a web page that is the same as the one given for reference. It is fully coded in HTML, CSS and JavaScript. It is user-friendly and functional. It uses email validator-pizza-node API to prevent use of temporary emails while signing up.
 ## Setup/Installation Requirements
 * There is one main folder
 * A sub-folder of assets which has images, css and JavaScript files.
