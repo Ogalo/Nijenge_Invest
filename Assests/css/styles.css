@@ -119,8 +119,9 @@ span{
   font-size: 26px;
   text-align: right;
 }
-span i{
+span i:hover{
   cursor: pointer;
+  color: rgba(16, 88, 221, 0.959);
 }
 
 .entrepreneur{
