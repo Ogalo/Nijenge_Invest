@@ -13,9 +13,12 @@ const entrePage = document.getElementById("entrePage")
 const investBtn = document.getElementById("investBtn")
 const investPage = document.getElementById("investPage")
 
-
-toggleSignUp.addEventListener("click", (e) =>{
+document.addEventListener("DOMContentLoaded", (e) => {
   e.preventDefault();
+});
+
+toggleSignUp.addEventListener("click", () =>{
+  
   if(signUpPage.style.display === "none"){
     
     signUpPage.style.display = "block";
