@@ -13,6 +13,20 @@ const entrePage = document.getElementById("entrePage")
 const investBtn = document.getElementById("investBtn")
 const investPage = document.getElementById("investPage")
 
+const options = {
+	method: 'GET',
+	headers: {
+		'Accept-Encoding': 'application/gzip',
+		'X-RapidAPI-Key': 'SIGN-UP-FOR-KEY',
+		'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
+	}
+};
+
+fetch('https://google-translate1.p.rapidapi.com/language/translate/v2/languages', options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
+
 document.addEventListener("DOMContentLoaded", (e) => {
   e.preventDefault();
 });
