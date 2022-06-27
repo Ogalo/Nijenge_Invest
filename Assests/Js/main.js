@@ -61,17 +61,7 @@ toggleSignUp2.addEventListener("click", () =>{
   }
 })
 
-closeTab.addEventListener ("click", () => {
-  if(closeTab.parentElement.style.display === "none"){
-    closeTab.parentElement.style.display = "block";
-    signUpPage.style.display = "none";
-  }else{
-    closeTab.parentElement.style.display = "none";
-    mainPage.style.display = "none"
-  }
-  
-  
-})
+
 
 toggleSignIn.addEventListener("click", () =>{
   ;
