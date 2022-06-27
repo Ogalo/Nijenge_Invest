@@ -12,6 +12,7 @@ const EntreButt = document.getElementById("entreBtn")
 const entrePage = document.getElementById("entrePage")
 const investBtn = document.getElementById("investBtn")
 const investPage = document.getElementById("investPage")
+const register = document.getElementById("registerbtn")
 
 //email verifier API 
 const options = {
@@ -26,6 +27,11 @@ fetch('https://email-checker.p.rapidapi.com/verify/v1?email=name%40example.com',
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
+
+register.addEventListener("submit", () => {
+  alert `Thanks for joining Nijenge`
+
+})  
 
 document.addEventListener("DOMContentLoaded", (e) => {
   e.preventDefault();
