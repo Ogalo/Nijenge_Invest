@@ -13,35 +13,31 @@ const entrePage = document.getElementById("entrePage")
 const investBtn = document.getElementById("investBtn")
 const investPage = document.getElementById("investPage")
 const register = document.getElementById("registerbtn")
-const busiName = document.getElementById('name')
-const propName = document.getElementById('prop')
+const proposal = document.getElementById("propbtn")
 
 
 
-//email verifier API 
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'SIGN-UP-FOR-KEY',
-		'X-RapidAPI-Host': 'email-checker.p.rapidapi.com'
-	}
-};
-
-fetch('https://email-checker.p.rapidapi.com/verify/v1?email=name%40example.com', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
-
-register.addEventListener("submit", () => {
-  alert `Thanks for joining Nijenge`
-
-})  
 
 
-document.getElementById("entreProp").addEventListener("submit", () => {
+
+// //email verifier API 
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Key': 'SIGN-UP-FOR-KEY',
+// 		'X-RapidAPI-Host': 'email-checker.p.rapidapi.com'
+// 	}
+// };
+
+// fetch('https://email-checker.p.rapidapi.com/verify/v1?email=name%40example.com', options)
+// 	.then(response => response.json())
+// 	.then(response => console.log(response))
+// 	.catch(err => console.error(err));
+
+
+proposal.addEventListener("click", () => {
   entrePage.style.display = "none";
-  propName === busiName;
-
+ 
 })
 
 
@@ -112,6 +108,34 @@ closeTab1.addEventListener ("click", () => {
     
 })
 
+const aboutLink = document.getElementById('aboutLink')
+const aboutPage = document.getElementById('about')
+const closeTab5 = document.querySelector(".closeBtn5")
+
+
+aboutLink.addEventListener("click", () =>{
+  
+  if(aboutPage.style.display === "none"){
+    
+    aboutPage.style.display = "block";
+  
+  }else{
+    
+    aboutPage.style.display = "none";
+    
+
+  }
+})
+
+
+
+closeTab5.addEventListener ("click", () => {
+ 
+ aboutPage.style.display = "none"
+  
+})
+
+
 EntreButt.addEventListener("click", () =>{
   
   if(entrePage.style.display === "none"){
@@ -154,5 +178,24 @@ closeTab3.addEventListener ("click", () => {
   
     investPage.style.display = "none";
     
+})
+
+
+let share = document.getElementById('shares').value
+let forecast = document.getElementById('forcast').value
+let busina = document.getElementById('busina').value
+
+
+console.log(share);
+console.log(forecast);
+console.log(busina);
+let venture = document.getElementById('venture')
+let cost = document.getElementById('cost')
+let divident = document.getElementById('divident')
+
+proposal.addEventListener("submit", () => {
+  venture.append(`${busina}`)
+  cost.append(`${forecast}`)
+  divident.append(`${share}`)
 })
 

@@ -42,8 +42,8 @@
        <div class="navMenus">
          <div>
            <h3>Home</h3>
+           <h3 id="aboutLink">About</h3>
            <h3>Services</h3>
-           <h3>About</h3>
            <h3>Contact Us</h3>
          </div>
      
@@ -132,7 +132,7 @@
         <h1>Entrepreneur Proposal</h1>
         <hr>
     
-        <label for="text" id="name"><b>business name</b></label>
+        <label for="text"><b>business name</b></label>
         <input type="text" placeholder="Enter business name" name="business" id="busina" required>
     
         <label for="probState"><b>Problem Statement</b></label>
@@ -151,12 +151,15 @@
         <input type="text" placeholder="Why should I choose you ?" name="business" id="busina6" required>
 
         <label for="Forecast"><b>Returns and Expectations</b></label>
-        <input type="text" placeholder="financial targets " name="business" id="busina7" required>
+        <input type="text" placeholder="financial targets " name="business" id="forcast" required>
+
+        <label for="Shares"><b>Share Offer</b></label>
+        <input type="text" placeholder="Offering" name="Shares" id="shares" required>
 
     
         <hr>
     
-        <button type="submit" class="registerbtn">Propose</button>
+        <button type="submit" class="registerbtn" id="propbtn">Propose</button>
       </div>
     
     </form>
@@ -176,7 +179,7 @@
       <label for="Forecast"><b>Category:</b></label>
           <input type="text" placeholder="All " name="business" id="optionSelect" class="optionSelect" required>
       </div>             
-        <table class="content-table">
+        <table class="content-table" id="content-table">
         <thead>
           <tr>
             <th></th>
@@ -188,9 +191,9 @@
         <tbody>
           <tr>
             <td>1.</td>
-            <td id="prop">Auctioning Site</td>
-            <td>$ 1200000</td>
-            <td>20%</td>
+            <td id="venture">Auctioneer</td>
+            <td id="cost">$ 1200000</td>
+            <td id="divident">20%</td>
           </tr>
           <tr>
             <td>2.</td>
@@ -218,10 +221,26 @@
           </tr>
   
         </tbody>
-      </table>    
+      </table>  
+      
+      <div>
+        <button class="registerbtn" id="tablebtn">Update data</button>
+      </div>
   
     </div>
+   
   
+
+  </section>
+
+  <section class="about" id="about">
+
+    <span class = "closeBtn5">
+      <i class = "fas fa-times"></i>
+    </span>
+
+    <h1>About Nijenge</h1>
+    <p><b>Nijenge</b> will bridge the gap between entrepreneurs and investors by providing a platform where individuals who are entrepreneurs can share their ideas under strict confidentiality and investors that is anyone who has the cash and would like to support and venture into the business idea that the entrepreneur provides. This will then ensure that both parties get into an agreement where each and every individual profits, therefore leading to a growth of the economy by encouraging investments and the creation of opportunities.</p>
 
   </section>
 
