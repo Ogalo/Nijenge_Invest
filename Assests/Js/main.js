@@ -13,6 +13,10 @@ const entrePage = document.getElementById("entrePage")
 const investBtn = document.getElementById("investBtn")
 const investPage = document.getElementById("investPage")
 const register = document.getElementById("registerbtn")
+const busiName = document.getElementById('name')
+const propName = document.getElementById('prop')
+
+
 
 //email verifier API 
 const options = {
@@ -33,6 +37,15 @@ register.addEventListener("submit", () => {
 
 })  
 
+
+document.getElementById("entreProp").addEventListener("submit", () => {
+  entrePage.style.display = "none";
+  propName === busiName;
+
+})
+
+
+
 document.addEventListener("DOMContentLoaded", (e) => {
   e.preventDefault();
 });
@@ -50,6 +63,15 @@ toggleSignUp.addEventListener("click", () =>{
 
   }
 })
+
+closeTab.addEventListener ("click", () => {
+ 
+ signUpPage.style.display = "none"
+  
+})
+
+
+
 
 
 
@@ -85,14 +107,9 @@ toggleSignIn.addEventListener("click", () =>{
 })
 
 closeTab1.addEventListener ("click", () => {
-  if(closeTab1.parentElement.style.display === "none"){
-    closeTab1.parentElement.style.display = "block";
+ 
     signInPage.style.display = "none";
-  }else{
-    closeTab1.parentElement.style.display = "none";
-    mainPage.style.display = "none";
-  }
-  
+    
 })
 
 EntreButt.addEventListener("click", () =>{
@@ -100,7 +117,7 @@ EntreButt.addEventListener("click", () =>{
   if(entrePage.style.display === "none"){
     
     entrePage.style.display = "block";
-    
+  
   }else{
     
     entrePage.style.display = "none";
@@ -108,18 +125,16 @@ EntreButt.addEventListener("click", () =>{
 
   }
 })
+
+
 
 closeTab2.addEventListener ("click", () => {
-  if(closeTab2.parentElement.style.display === "none"){
-    closeTab2.parentElement.style.display = "block";
-    entrePage.style.display = "none";
-  }else{
-    closeTab2.parentElement.style.display = "none";
-    mainPage.style.display = "none"
-  }
-  
+ 
+ entrePage.style.display = "none"
   
 })
+
+
 
 investBtn.addEventListener("click", () =>{
   
@@ -136,23 +151,8 @@ investBtn.addEventListener("click", () =>{
 })
 
 closeTab3.addEventListener ("click", () => {
-  if(closeTab3.parentElement.style.display === "none"){
-    closeTab3.parentElement.style.display = "block";
+  
     investPage.style.display = "none";
-  }else{
-    closeTab3.parentElement.style.display = "none";
-    mainPage.style.display = "none"
-  }
-  
-  
+    
 })
 
-// const ValidatorPizzaClient = require("validator-pizza-node");
-
-// const client = new ValidatorPizzaClient();
-// client.validate("domain", "yopmail.com")
-//   .then(response => {
-//     console.log(response.valid());
-//     console.log(response.field("mx")); // Available fields: status, email, domain, mx, disposable, alias, did_you_mean, remaining_requests
-//     console.log(response.successful());
-//   });
