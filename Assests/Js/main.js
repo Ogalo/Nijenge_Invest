@@ -38,6 +38,7 @@ document.getElementById("signUpForm").addEventListener('submit', (e) => {
   
      alert("Welcome" + " " + userEmail.value)
      signUpPage.style.display = "none"
+     document.getElementById("signUpForm").style.display = "none"
  })
 
 proposal.addEventListener("click", () => {
