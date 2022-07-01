@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Stanley Mayore",
+      "password": "12345678",
+      "confirmPassword": "12345678"
+    },
+    {
+      "username": "Harisson Omondi",
+      "password": "12345678",
+      "confirmPassword": "12345678",
+      "id": 2
+    }
+  ]
+}
