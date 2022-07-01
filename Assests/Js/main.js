@@ -14,13 +14,16 @@ const investBtn = document.getElementById("investBtn")
 const investPage = document.getElementById("investPage")
 const register = document.getElementById("registerbtn")
 const proposal = document.getElementById("propbtn")
+const userEmail = document.getElementById("email")
+const password = document.getElementById("psw")
+const confirmPassword = document.getElementById("psw-repeat")
 const urlApi = 'https://git.heroku.com/nijenge-invest.git'
 
 
 signUpPage.addEventListener('submit', (e) => { 
      e.preventDefault(); 
   
-     const newUser = {username: , password: ,confirmePassword:}; 
+     const newUser = {email: userEmail.value, password: password.value,confirmePassword: confirmPassword.value}; 
   
      fetch(urlApi, { 
          method: "POST", 
@@ -33,12 +36,7 @@ signUpPage.addEventListener('submit', (e) => {
      .then(data => console.log('Success:', data)) 
      .catch(error => console.log(error)) 
   
-     alert("Welcome" + " " + userName.value) 
-     // window.location = "../../index.html" 
-     document.getElementById("userInputName").innerHTML = userName.value; 
-     const signUp = document.getElementById("register"); 
-     signUp.style.display = "none"; 
-  
+     alert("Welcome" + " " + userEmail.value) 
  })
 
 proposal.addEventListener("click", () => {
