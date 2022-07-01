@@ -36,7 +36,8 @@ signUpPage.addEventListener('submit', (e) => {
      .then(data => console.log('Success:', data)) 
      .catch(error => console.log(error)) 
   
-     alert("Welcome" + " " + userEmail.value) 
+     alert("Welcome" + " " + userEmail.value)
+     signUpPage.style.display = "none"
  })
 
 proposal.addEventListener("click", () => {
