@@ -14,26 +14,32 @@ const investBtn = document.getElementById("investBtn")
 const investPage = document.getElementById("investPage")
 const register = document.getElementById("registerbtn")
 const proposal = document.getElementById("propbtn")
+const urlApi = 'https://git.heroku.com/nijenge-invest.git'
 
 
-
-
-
-
-// //email verifier API 
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Key': 'SIGN-UP-FOR-KEY',
-// 		'X-RapidAPI-Host': 'email-checker.p.rapidapi.com'
-// 	}
-// };
-
-// fetch('https://email-checker.p.rapidapi.com/verify/v1?email=name%40example.com', options)
-// 	.then(response => response.json())
-// 	.then(response => console.log(response))
-// 	.catch(err => console.error(err));
-
+signUpPage.addEventListener('submit', (e) => { 
+     e.preventDefault(); 
+  
+     const newUser = {username: , password: ,confirmePassword:}; 
+  
+     fetch(urlApi, { 
+         method: "POST", 
+         headers: { 
+             'Content-Type': 'application/json', 
+         }, 
+         body: JSON.stringify(newUser) 
+     }) 
+     .then(response => response.json()) 
+     .then(data => console.log('Success:', data)) 
+     .catch(error => console.log(error)) 
+  
+     alert("Welcome" + " " + userName.value) 
+     // window.location = "../../index.html" 
+     document.getElementById("userInputName").innerHTML = userName.value; 
+     const signUp = document.getElementById("register"); 
+     signUp.style.display = "none"; 
+  
+ })
 
 proposal.addEventListener("click", () => {
   entrePage.style.display = "none";
