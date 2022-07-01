@@ -20,7 +20,7 @@ const confirmPassword = document.getElementById("psw-repeat")
 const urlApi = 'https://git.heroku.com/nijenge-invest.git'
 
 
-signUpPage.addEventListener('submit', (e) => { 
+document.getElementById("signUpForm").addEventListener('submit', (e) => { 
      e.preventDefault(); 
   
      const newUser = {email: userEmail.value, password: password.value,confirmePassword: confirmPassword.value}; 
