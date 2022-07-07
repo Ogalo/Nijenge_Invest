@@ -20,12 +20,14 @@ const confirmPassword = document.getElementById("psw-repeat")
 const urlApi = 'https://git.heroku.com/nijenge-invest.git'
 
 
-document.getElementById("signUpForm").addEventListener('submit', (e) => { 
-     e.preventDefault(); 
+
+
+document.getElementById("signUpForm").addEventListener('submit',(e)=>{ 
+     e.preventDefault(); 
   
-     const newUser = {email: userEmail.value, password: password.value,confirmePassword: confirmPassword.value}; 
+     const newUser={email: userEmail.value, password: password.value,confirmPassword: confirmPassword.value}; 
   
-     fetch(urlApi, { 
+     fetch(urlApi, { 
          method: "POST", 
          headers: { 
              'Content-Type': 'application/json', 
@@ -40,6 +42,12 @@ document.getElementById("signUpForm").addEventListener('submit', (e) => {
      signUpPage.style.display = "none"
      document.getElementById("signUpForm").style.display = "none"
  })
+
+
+
+
+
+
 
 proposal.addEventListener("click", () => {
   entrePage.style.display = "none";
