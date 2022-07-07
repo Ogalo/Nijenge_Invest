@@ -17,7 +17,7 @@ const proposal = document.getElementById("propbtn")
 const userEmail = document.getElementById("email")
 const password = document.getElementById("psw")
 const confirmPassword = document.getElementById("psw-repeat")
-const urlApi = 'https://git.heroku.com/nijenge-invest.git'
+const urlApi = 'https://nijenge-invest.herokuapp.com/users'
 
 
 
